@@ -1,4 +1,5 @@
 import React from "react";
+import HOC from './index'
 
 function FunctionalComponent(props){
     console.log(props)

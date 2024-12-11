@@ -7,11 +7,21 @@ console.log(Context);
 
 function App() {
      return (
-      <div className="App">
-        <Context.Provider value="dark">
-          <ContextUse/>
-        </Context.Provider>
-     </div>
+       <div className="App" class="container-fluid text-center">
+         <Context.Provider value="red">
+           <div class="row bordered-div">
+             <div class="col-3 gx-0 bordered-div">
+               <ContextUse />
+             </div>
+             <div class="col-5 gx-10 bordered-div">
+               <ContextUse />
+             </div>
+             <div class="col-4 gx-20 bordered-div">
+               <ContextUse />
+             </div>
+           </div>
+         </Context.Provider>
+       </div>
    );
  }
 
